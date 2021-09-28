@@ -1,0 +1,41 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+
+<struts>
+	<package name="default" extends="hibernate-default">
+	<!-- User model -->
+		<action name="saveOrUpdateUser" method="saveOrUpdate" class="com.vaannila.web.UserAction">
+			<result name="success" type="redirect">listUser</result>
+		</action>
+		<action name="listUser" method="list" class="com.vaannila.web.UserAction">
+			<result name="success">/register.jsp</result>
+		</action>
+		<action name="editUser" method="edit" class="com.vaannila.web.UserAction">
+			<result name="success">/register.jsp</result>
+		</action>
+		<action name="deleteUser" method="delete" class="com.vaannila.web.UserAction">
+			<result name="success" type="redirect">listUser</result>
+		</action>
+		
+		<!-- Contact model -->
+		<action name="saveOrUpdateContact" method="saveOrUpdate" class="com.vaannila.web.ContactAction">
+			<result name="success" type="redirect">listContact</result>
+		</action>
+		<action name="listContact" method="list" class="com.vaannila.web.ContactAction">
+			<result name="success">/contact.jsp</result>
+		</action>
+		<action name="editContact" method="edit" class="com.vaannila.web.ContactAction">
+			<result name="success">/contact.jsp</result>
+		</action>
+		<action name="deleteContact" method="delete" class="com.vaannila.web.ContactAction">
+			<result name="success" type="redirect">listContact</result>
+		</action>
+		
+		<!-- Cep model -->
+		<action name="searchCEP" method="searchCEP" class="com.vaannila.web.UserAction">
+			<result name="SUCESS"/>
+		</action>
+	</package>
+</struts>
