@@ -3,17 +3,16 @@
 		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
 		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
-	
-		<session-factory>
-			<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-			<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/struts2</property>
-			<property name="hibernate.connection.username">root</property>
-			<property name="connection.password">root</property>
-			<property name="connection.pool_size">1</property>
-			<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-			<property name="show_sql">true</property>
-			<mapping class="com.vaannila.domain.User" />
-			<mapping class="com.vaannila.domain.Contact" />
-		</session-factory>
 
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/struts</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="connection.password">admin</property>
+		<property name="connection.pool_size">1</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="show_sql">true</property>
+		<mapping class="com.vaannila.domain.User" />
+		<mapping class="com.vaannila.domain.Contact" />
+	</session-factory>
 </hibernate-configuration>

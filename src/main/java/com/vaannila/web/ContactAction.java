@@ -15,31 +15,32 @@ import com.vaannila.dao.ContactDAOImpl;
 import com.vaannila.domain.Contact;
 
 public class ContactAction extends ActionSupport implements ModelDriven<Contact> {
-	
-	private static final long serialVersionUID = -6659925652584240539L;
+
+	private static final long serialVersionUID = 1929061851023346437L;
 	
 	private Contact contact = new Contact();
 	private List<Contact> contactList = new ArrayList<Contact>();
 	private ContactDAO contactDAO = new ContactDAOImpl();
-
+	
 	@Override
 	public Contact getModel() {
-		// TODO Auto-generated method stub
 		return contact;
 	}
+	
 	
 	public String saveOrUpdate()
 	{	
 		contactDAO.saveOrUpdateContact(contact);
 		return SUCCESS;
-	}
-	
+	}	
+
 	public String list()
 	{
 		contactList = contactDAO.listContact();
 		return SUCCESS;
 	}
 	
+
 	public String delete()
 	{
 		HttpServletRequest request = (HttpServletRequest) ActionContext.getContext().get(ServletActionContext.HTTP_REQUEST);
@@ -53,7 +54,12 @@ public class ContactAction extends ActionSupport implements ModelDriven<Contact>
 		contact = contactDAO.getContactById(Long.parseLong(request.getParameter("id")));
 		return SUCCESS;
 	}
-
+	
+	public String searchCEP() {
+		//TODO Desenvolver logica para o site correios
+		return SUCCESS;
+	}
+	
 	public Contact getContact() {
 		return contact;
 	}
@@ -70,5 +76,4 @@ public class ContactAction extends ActionSupport implements ModelDriven<Contact>
 		this.contactList = contactList;
 	}
 
-	
 }

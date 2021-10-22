@@ -19,6 +19,7 @@
 		<s:submit value="Ok" />
 	</s:push>
 </s:form>
+
 <s:if test="contactList.size() > 0">
 	<div class="content">
 	<table class="contactsTable" cellpadding="5px">

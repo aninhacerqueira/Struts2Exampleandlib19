@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="USER")
+@Table(name = "USER")
 public class User {
 
 	private Long id;
@@ -16,65 +16,60 @@ public class User {
 	private String country;
 	private String aboutYou;
 	//private Endereco endereco;
-	//private Boolean mailingList;
-	
+
 	@Id
 	@GeneratedValue
-	@Column(name="USER_ID")	
+	@Column(name = "USER_ID")
 	public Long getId() {
 		return id;
 	}
+
 	public void setId(Long id) {
 		this.id = id;
 	}
-	
-	@Column(name="USER_NAME")
+
+	@Column(name = "USER_NAME")
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	@Column(name="USER_GENDER")
+
+	@Column(name = "USER_GENDER")
 	public String getGender() {
 		return gender;
 	}
+
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-	
-	@Column(name="USER_COUNTRY")
+
+	@Column(name = "USER_COUNTRY")
 	public String getCountry() {
 		return country;
 	}
+
 	public void setCountry(String country) {
 		this.country = country;
 	}
-	
-	@Column(name="USER_ABOUT_YOU")
+
+	@Column(name = "USER_ABOUT_YOU")
 	public String getAboutYou() {
 		return aboutYou;
 	}
+
 	public void setAboutYou(String aboutYou) {
 		this.aboutYou = aboutYou;
 	}
-	
-	/*@Column(name="USER_ENDERECO")
-	public Endereco getEndereco() {
-		return endereco;
-	}
-	
-	public void setEndereco(Endereco endereco) {
-		this.endereco = endereco;
-	}*/
-	
-	/*@Column(name="USER_MAILING_LIST")
-	public Boolean getMailingList() {
-		return mailingList;
-	}
-	public void setMailingList(Boolean mailingList) {
-		this.mailingList = mailingList;
-	}*/
 
+//	@Column(name = "USER_ENDERECO")
+//	public String getEndereco() {
+//		return endereco;
+//	}
+//
+//	public void setEndereco(String endereco) {
+//		this.endereco = endereco;
+//	}
 }

@@ -10,7 +10,7 @@ import com.googlecode.s2hibernate.struts2.plugin.annotations.TransactionTarget;
 import com.vaannila.domain.Contact;
 
 public class ContactDAOImpl implements ContactDAO {
-
+	
 	@SessionTarget
 	Session session;
 	
@@ -18,7 +18,7 @@ public class ContactDAOImpl implements ContactDAO {
 	Transaction transaction;
 
 	/**
-	 * Used to save or update a user.
+	 * Used to save or update a Contact.
 	 */
 	@Override
 	public void saveOrUpdateContact(Contact contact) {
@@ -31,7 +31,7 @@ public class ContactDAOImpl implements ContactDAO {
 	}
 
 	/**
-	 * Used to delete a user.
+	 * Used to delete a Contact.
 	 */
 	@Override
 	public void deleteContact(Long contactId) {
@@ -45,7 +45,7 @@ public class ContactDAOImpl implements ContactDAO {
 	}
 	
 	/**
-	 * Used to list all the users.
+	 * Used to list all the Contacts.
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
@@ -60,7 +60,7 @@ public class ContactDAOImpl implements ContactDAO {
 	}
 
 	/**
-	 * Used to list a single user by Id.
+	 * Used to list a single Contact by Id.
 	 */
 	@Override
 	public Contact getContactById(Long contactId) {

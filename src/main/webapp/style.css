@@ -31,15 +31,7 @@ font-size: small;
 	background-color: rgb(255, 255, 255);
 }
 
-.odd {
-background-color: #FFFFF0;
-}
-
-.even {
-background-color: #FAF0E6;
-}
-
-.contactsTable {
+.contactTable {
 	border-width: 1px 1px 1px 1px;
 	border-spacing: 2px;
 	border-style: outset outset outset outset;
@@ -47,7 +39,7 @@ background-color: #FAF0E6;
 	border-collapse: collapse;
 }
 
-.contactsTable td {
+.contactTable td {
 	border-width: 1px 1px 1px 1px;
 	border-spacing: 2px;
 	border-style: outset outset outset outset;
@@ -55,11 +47,19 @@ background-color: #FAF0E6;
 	border-collapse: collapse;
 }
 
-.contactsTable th {
+.contactTable th {
 	border-width: 1px 1px 1px 1px;
 	border-spacing: 2px;
 	border-style: outset outset outset outset;
 	border-color: black black black black;
 	border-collapse: collapse;
 	background-color: rgb(255, 255, 255);
+}
+
+.odd {
+background-color: #FFFFF0;
+}
+
+.even {
+background-color: #FAF0E6;
 }
