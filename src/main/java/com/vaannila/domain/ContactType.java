@@ -4,15 +4,14 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "contacts")
-public class Contact {
+@Table(name = "contact_type")
+public class ContactType {
 	
 	private Long id;
-	private String phoneNumber;
+	private String contactType;
 
 	@Id
 	@GeneratedValue
@@ -25,13 +24,13 @@ public class Contact {
 		this.id = id;
 	}
 
-	@Column(name = "PHONE_NUMBER")
-	public String getPhoneNumber() {
-		return phoneNumber;
+	@Column(name = "CONTACT_TYPE")
+	public String getContactType() {
+		return contactType;
 	}
 
-	public void setPhoneNumber(String phoneNumber) {
-		this.phoneNumber = phoneNumber;
+	public void setContactType(String contactType) {
+		this.contactType = contactType;
 	}
 
 }
