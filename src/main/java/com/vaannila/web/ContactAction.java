@@ -12,28 +12,34 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 import com.vaannila.dao.ContactDAO;
 import com.vaannila.dao.ContactDAOImpl;
+import com.vaannila.dao.ContactTypeDAO;
+import com.vaannila.dao.ContactTypeDAOImpl;
 import com.vaannila.domain.Contact;
+import com.vaannila.domain.ContactType;
 
-public class ContactAction extends ActionSupport implements ModelDriven<Contact> {
-
-	private static final long serialVersionUID = 1929061851023346437L;
+public class ContactAction extends ActionSupport implements ModelDriven<ContactType> {
 	
-	private Contact contact = new Contact();
+	private static final long serialVersionUID = -6659925652584240539L;
+	
+	private ContactType contactType = new ContactType();
 	private List<Contact> contactList = new ArrayList<Contact>();
+	private List<ContactType> contactTypeList = new ArrayList<ContactType>();
 	private ContactDAO contactDAO = new ContactDAOImpl();
+	private ContactTypeDAO contactTypeDAO = new ContactTypeDAOImpl();
 	
 	@Override
-	public Contact getModel() {
-		return contact;
+	public ContactType getModel() {
+		// TODO Auto-generated method stub
+		return contactType;
 	}
 	
 	
 	public String saveOrUpdate()
 	{	
-		contactDAO.saveOrUpdateContact(contact);
+		//contactDAO.saveOrUpdateContact(contactType);
 		return SUCCESS;
-	}	
-
+	}
+	
 	public String list()
 	{
 		contactList = contactDAO.listContact();
@@ -51,7 +57,7 @@ public class ContactAction extends ActionSupport implements ModelDriven<Contact>
 	public String edit()
 	{
 		HttpServletRequest request = (HttpServletRequest) ActionContext.getContext().get(ServletActionContext.HTTP_REQUEST);
-		contact = contactDAO.getContactById(Long.parseLong(request.getParameter("id")));
+		//contactType = contactDAO.getContactById(Long.parseLong(request.getParameter("id")));
 		return SUCCESS;
 	}
 	
@@ -65,7 +71,7 @@ public class ContactAction extends ActionSupport implements ModelDriven<Contact>
 	}
 
 	public void setContact(Contact contact) {
-		this.contact = contact;
+		//this.contactType = contact;
 	}
 
 	public List<Contact> getContactList() {
@@ -76,4 +82,26 @@ public class ContactAction extends ActionSupport implements ModelDriven<Contact>
 		this.contactList = contactList;
 	}
 
+	public String listType()
+	{
+		contactTypeList = contactTypeDAO.listContactType();
+		return SUCCESS;
+	}
+	public List<ContactType> getContactTypeList() {
+		return contactTypeList;
+	}
+
+	public void setContactTypeList(List<ContactType> contactTypeList) {
+		this.contactTypeList = contactTypeList;
+	}
+
+	public ContactType getContactType() {
+		return contactType;
+	}
+
+	public void setContactType(ContactType contactType) {
+		this.contactType = contactType;
+	}
+	
+	
 }

@@ -20,10 +20,11 @@
 		<s:select name="country" list="{'India','USA','UK'}" headerKey=""
 			headerValue="Select" label="Select a country" />
 		<s:textarea name="aboutYou" label="About You" />
-		<s:textarea name="cep" label="CEP"/>
+			<s:textfield name="CEP" label="CEP"/> 
+			<s:submit/>
 		<s:checkbox name="mailingList"
 			label="Would you like to join our mailing list?" />
-		<s:submit />
+		<s:submit value="Ok" />
 	</s:push>
 </s:form>
 
@@ -36,6 +37,7 @@
 			<th>Country</th>
 			<th>About You</th>
 			<th>Mailing List</th>
+			<th>CEP</th>
 			<th>Edit</th>
 			<th>Delete</th>
 		</tr>
@@ -46,6 +48,7 @@
 				<td><s:property value="gender" /></td>
 				<td><s:property value="country" /></td>
 				<td><s:property value="aboutYou" /></td>
+				<td><s:property value="CEP" /></td>
 				<td><s:property value="mailingList" /></td>
 				<td><s:url id="editURL" action="editUser">
 					<s:param name="id" value="%{id}"></s:param>

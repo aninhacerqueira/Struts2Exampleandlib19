@@ -69,8 +69,7 @@ public class UserAction extends ActionSupport implements ModelDriven<User> {
 		return SUCCESS;
 	}
 	
-	public String searchCEP() {
-		//TODO Desenvolver logica para o site correios
+	public String searchCep() {
 		return SUCCESS;
 	}
 	

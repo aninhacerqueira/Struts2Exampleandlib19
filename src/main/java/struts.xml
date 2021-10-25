@@ -32,6 +32,20 @@
 			<result name="success" type="redirect">listContact</result>
 		</action>
 		
+		<!-- Contact Type -->
+		<action name="saveOrUpdateContactType" method="saveOrUpdate" class="com.vaannila.web.ContactAction">
+			<result name="success" type="redirect">listContactType</result>
+		</action>
+		<action name="listContactType" method="listType" class="com.vaannila.web.ContactAction">
+			<result name="success">/contact.jsp</result>
+		</action>
+		<action name="editContactType" method="edit" class="com.vaannila.web.ContactAction">
+			<result name="success">/contact.jsp</result>
+		</action>
+		<action name="deleteContactType" method="delete" class="com.vaannila.web.ContactAction">
+			<result name="success" type="redirect">listContactType</result>
+		</action>
+		
 		<!-- Cep model -->
 		<action name="searchCEP" method="searchCEP" class="com.vaannila.web.UserAction">
 			<result name="SUCESS"/>
