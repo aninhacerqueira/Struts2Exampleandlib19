@@ -27,6 +27,7 @@
 			<th>Phone number</th>
 			<th>Edit</th>
 			<th>Delete</th>
+			
 		</tr>
 		<s:iterator value="contactList" status="contactStatus">
 			<tr
