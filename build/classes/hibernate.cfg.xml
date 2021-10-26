@@ -14,5 +14,6 @@
 		<property name="show_sql">true</property>
 		<mapping class="com.vaannila.domain.User" />
 		<mapping class="com.vaannila.domain.Contact" />
+		<mapping class="com.vaannila.domain.ContactType" />
 	</session-factory>
 </hibernate-configuration>
