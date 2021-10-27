@@ -5,6 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script src="https://kit.fontawesome.com/94257b76a9.js" crossorigin="anonymous"></script>
 <title>User Contacts</title>
 <s:head />
 <style type="text/css">
@@ -12,6 +13,7 @@
 </style>
 </head>
 <body>
+
 	<s:form action="listContactType">
 		<s:select label="Tipos de contatos" headerKey="-1"
 			headerValue="Selecione seu contato" list="contactTypeList"
@@ -31,7 +33,10 @@
 	</div>
 	<div>
 		<s:form action="saveOrUpdate">
-			<s:textfield name="phoneNumber" label="Adress" />
+			<s:textfield name="phoneNumber" label="Endereço" placeholder="Rua"/>
+			<s:textfield name="phoneNumber" placeholder="Número"/>
+			<s:textfield name="phoneNumber" placeholder="Bairro"/>
+			<s:textfield name="phoneNumber" placeholder="CEP"/>
 			<s:submit value="Ok" />
 		</s:form>
 	</div>
