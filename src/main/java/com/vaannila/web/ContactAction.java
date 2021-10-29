@@ -66,9 +66,9 @@ public class ContactAction extends ActionSupport implements ModelDriven<ContactT
 		return SUCCESS;
 	}
 	
-//	public Contact getContact() {
-//		return contact;
-//	}
+	public Contact getContact() {
+		return contact;
+	}
 
 	public void setContact(Contact contact) {
 		//this.contactType = contact;
