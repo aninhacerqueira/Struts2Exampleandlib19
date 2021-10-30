@@ -66,9 +66,9 @@
 		<table>
 				<tr><td><s:textfield label="Logradouro" size="30" /></td></tr>
 			
-				<tr id="bairro"><td><s:textfield label="Bairro" size="30" /></td></tr>
+				<tr><td><s:textfield label="Bairro" size="30" /></td></tr>
 			
-				<tr id="municipio"><td><s:textfield label="Municipio" size="30" /></td></tr>
+				<tr><td><s:textfield label="Municipio" size="30" /></td></tr>
 			
 				<tr><td><s:textfield label="UF" size="1" /></td></tr>
 			

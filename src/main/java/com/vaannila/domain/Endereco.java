@@ -1,14 +1,31 @@
 package com.vaannila.domain;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="endereco")
 public class Endereco {
 
+	private Long endereco;
 	private String logradouro;
-	private String complemento;
 	private String bairro;
-	private String cep;
-	private String cidade;
+	private String municipio;
 	private String UF;
+	private String cep;
+	private String pais;
 
+	@Column(name="ENDERECO")
+	public Long getEndereco() {
+		return endereco;
+	}
+	
+	public void setEndereco(Long endereco) {
+		this.endereco = endereco;
+	}
+	
+	@Column(name="LOGRADOURO")
 	public String getLogradouro() {
 		return logradouro;
 	}
@@ -16,15 +33,8 @@ public class Endereco {
 	public void setLogradouro(String logradouro) {
 		this.logradouro = logradouro;
 	}
-
-	public String getComplemento() {
-		return complemento;
-	}
-
-	public void setComplemento(String complemento) {
-		this.complemento = complemento;
-	}
-
+	
+	@Column(name="BAIRRO")
 	public String getBairro() {
 		return bairro;
 	}
@@ -33,22 +43,16 @@ public class Endereco {
 		this.bairro = bairro;
 	}
 
-	public String getCep() {
-		return cep;
+	@Column(name="MUNICIPIO")
+	public String getMunicipio() {
+		return municipio;
 	}
-
-	public void setCep(String cep) {
-		this.cep = cep;
+	
+	public void setMunicipio(String municipio) {
+		this.municipio = municipio;
 	}
-
-	public String getCidade() {
-		return cidade;
-	}
-
-	public void setCidade(String cidade) {
-		this.cidade = cidade;
-	}
-
+	
+	@Column(name="UF")
 	public String getUF() {
 		return UF;
 	}
@@ -56,4 +60,25 @@ public class Endereco {
 	public void setUF(String uF) {
 		UF = uF;
 	}
+
+	@Column(name="CEP")
+	public String getCep() {
+		return cep;
+	}
+
+	public void setCep(String cep) {
+		this.cep = cep;
+	}
+	
+	@Column(name="PAIS")
+	public String getPais() {
+		return pais;
+	}
+
+	public void setPais(String pais) {
+		this.pais = pais;
+	}
+	
+
+	
 }
