@@ -1,4 +1,4 @@
-package com.vaannila.domain;
+package br.com.vaannila.domain;
 
 public class Endereco {
 

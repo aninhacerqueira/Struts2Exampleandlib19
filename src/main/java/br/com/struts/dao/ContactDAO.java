@@ -1,7 +1,8 @@
-package com.vaannila.dao;
+package br.com.vaannila.dao;
 
 import java.util.List;
-import com.vaannila.domain.Contact;
+
+import br.com.vaannila.domain.Contact;
 
 public interface ContactDAO {
 	
