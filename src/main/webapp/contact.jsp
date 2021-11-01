@@ -2,6 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <%@taglib uri="/struts-tags" prefix="s"%>
+<%@ taglib prefix="sx" uri="/struts-dojo-tags"%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -22,7 +23,7 @@
 	crossorigin="anonymous">
 
 <title>Formulario</title>
-
+<sx:head/>
 <s:head />
 <style type="text/css">
 @import url(style.css);
@@ -40,6 +41,9 @@
 								headerValue="Selecione o tipo de contato" list="contactTypeList"
 								name="contactType" listKey="id" listValue="contactType" />
 						</s:form></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="Clique aqui!" onclick="callAjax()"/></td>
 				</tr>
 			</table>
 		</div>
