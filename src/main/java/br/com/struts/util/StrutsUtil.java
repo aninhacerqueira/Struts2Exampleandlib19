@@ -1,12 +1,21 @@
 package br.com.struts.util;
 
+import org.apache.commons.lang.StringUtils;
+
 public class StrutsUtil {
 
-	public static void converterValor(Integer valor) {
-		Integer num = valor;
-		num.toString();
-		String novoValor = "000" + num;
-		System.out.println(novoValor);
+	public static String converterValor(Integer valor) {
+		
+		return StringUtils.leftPad(String.valueOf(valor), 11, "0");
 		
 	}
+	
+		public static String mudarPalavrasTexto(String texto) {
+		
+		return texto.replaceAll("(?i)ainda", "até este momento").replaceAll("mal", "bem");
+		
+	}
+	
+	
 }
+

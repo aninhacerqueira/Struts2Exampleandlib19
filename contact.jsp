@@ -2,6 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <%@taglib uri="/struts-tags" prefix="s"%>
+<%@ taglib prefix="sx" uri="/struts-dojo-tags" %>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -15,7 +16,7 @@
 <script type="text/javascript" src="includes/contacts/index.js"></script>
 
 <title>Formulário</title>
-
+<sx:head/>
 <s:head />
 <style type="text/css">
 @import url(style.css);
