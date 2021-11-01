@@ -1,65 +1,50 @@
 @CHARSET "ISO-8859-1";
 
-.content {
-font-family: sans-serif;
-font-size: small;
+html { 
+    min-width: 320px; 
+    max-width: 1400px; 
 }
 
-
-.userTable {
-	border-width: 1px 1px 1px 1px;
-	border-spacing: 2px;
-	border-style: outset outset outset outset;
-	border-color: black black black black;
-	border-collapse: collapse;
+#corpo{
+	border-style: groove;
 }
 
-.userTable td {
-	border-width: 1px 1px 1px 1px;
-	border-spacing: 2px;
-	border-style: outset outset outset outset;
-	border-color: black black black black;
-	border-collapse: collapse;
+#titulo{
+	font-family:arial;
+	text-align: center;
+	margin-top: 30px;
 }
 
-.userTable th {
-	border-width: 1px 1px 1px 1px;
-	border-spacing: 2px;
-	border-style: outset outset outset outset;
-	border-color: black black black black;
-	border-collapse: collapse;
-	background-color: rgb(255, 255, 255);
+#conteiner{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #f1f1f1;
+	
+}
+#conteiner1{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #f1f1f1;
+	
+}
+#tabelaTipoContato, #tabelaTelefone, #tabelaEmail{
+	margin-left: 25px;
+	margin-bottom: 25px;
+	margin-top: 10px;
 }
 
-.odd {
-background-color: #FFFFF0;
+#tabelaEndereco{
+	margin-bottom: 25px;
+	
 }
 
-.even {
-background-color: #FAF0E6;
+#endereco{
+	width: 50px;
 }
-
-.contactsTable {
-	border-width: 1px 1px 1px 1px;
-	border-spacing: 2px;
-	border-style: outset outset outset outset;
-	border-color: black black black black;
-	border-collapse: collapse;
+tr{
+	background-color: #f1f1f1;
 }
-
-.contactsTable td {
-	border-width: 1px 1px 1px 1px;
-	border-spacing: 2px;
-	border-style: outset outset outset outset;
-	border-color: black black black black;
-	border-collapse: collapse;
-}
-
-.contactsTable th {
-	border-width: 1px 1px 1px 1px;
-	border-spacing: 2px;
-	border-style: outset outset outset outset;
-	border-color: black black black black;
-	border-collapse: collapse;
-	background-color: rgb(255, 255, 255);
-}
+/*#tabelaTipoContato, #tabelaTelefone{
+	background-color: #f1f1f1;
+	
+}*/

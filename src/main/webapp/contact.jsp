@@ -30,53 +30,60 @@
 </head>
 <body id="corpo">
 	<h1 id="titulo">Formulário de Contato</h1>
-	
-	<div id="tabelaTipoContato">
-		<table>
-			<tr>
-				<td><s:form action="listContactType">
-						<s:select label="Tipos de contatos" headerKey="-1"
-							headerValue="Selecione o tipo de contato" list="contactTypeList"
-							name="contactType" listKey="id" listValue="contactType" />
-					</s:form></td>
-			</tr>
-		</table>
+
+	<div id="conteiner">
+		<div id="tabelaTipoContato">
+			<table>
+				<tr>
+					<td><s:form action="listContactType">
+							<s:select label="Tipos de contatos" headerKey="-1"
+								headerValue="Selecione o tipo de contato" list="contactTypeList"
+								name="contactType" listKey="id" listValue="contactType" />
+						</s:form></td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="tabelaTelefone">
+			<table>
+				<tr>
+					<td><s:textfield name="tipoContato" id="telefone"
+							label="Telefone" /></td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="tabelaEmail">
+			<table>
+				<tr>
+					<td><s:textfield name="tipoContato" label="Email" id="email"
+							size="30" /></td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="tabelaEndereco">
+			<table id="endereco">
+				<tr>
+					<td><s:textfield label="Logradouro" size="30" class="campo" /></td>
+				</tr>
+				<tr>
+					<td><s:textfield label="Bairro" size="30" /></td>
+				</tr>
+				<tr>
+					<td><s:textfield label="Municipio" size="30" /></td>
+				</tr>
+				<tr>
+					<td><s:textfield label="UF" size="1" /></td>
+				</tr>
+				<tr>
+					<td><s:textfield id="cep" label="Cep" size="7" /></td>
+				</tr>
+				<tr>
+					<td><s:textfield label="País" size="20" /></td>
+				</tr>
+			</table>
+		</div>
 	</div>
-
-	<div id="tabelaTelefone">
-		<table>
-			<tr>
-				<td><s:textfield name="tipoContato" id="telefone"
-						label="Telefone" /></td>
-			</tr>
-
-		</table>
-	</div>
-
-	<div id="tabelaEmail">
-		<table>
-			<tr>
-				<td><s:textfield name="tipoContato" label="Email" id="email" size="30"/></td>
-			</tr>
-
-		</table>
-	</div>
-
-	<div id="tabelaEndereco">
-		<table>
-				<tr><td><s:textfield label="Logradouro" size="30" /></td></tr>
-			
-				<tr><td><s:textfield label="Bairro" size="30" /></td></tr>
-			
-				<tr><td><s:textfield label="Municipio" size="30" /></td></tr>
-			
-				<tr><td><s:textfield label="UF" size="1" /></td></tr>
-			
-				<tr><td><s:textfield id="cep" label="Cep" size="7" /></td></tr>
-			
-				<tr><td><s:textfield label="País" size="20" /></td></tr>
-		</table>
-	</div>
-		
 </body>
 </html>

@@ -1,4 +1,4 @@
-package com.vaannila.web;
+package br.com.struts.web;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,9 +10,10 @@ import org.apache.struts2.ServletActionContext;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
-import com.vaannila.dao.UserDAO;
-import com.vaannila.dao.UserDAOImpl;
-import com.vaannila.domain.User;
+
+import br.com.struts.dao.UserDAO;
+import br.com.struts.dao.UserDAOImpl;
+import br.com.struts.domain.User;
 
 public class UserAction extends ActionSupport implements ModelDriven<User> {
 

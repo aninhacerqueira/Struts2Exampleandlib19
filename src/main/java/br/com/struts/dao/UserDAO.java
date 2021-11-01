@@ -1,7 +1,8 @@
-package com.vaannila.dao;
+package br.com.struts.dao;
 
 import java.util.List;
-import com.vaannila.domain.User;
+
+import br.com.struts.domain.User;
 
 public interface UserDAO {
 
