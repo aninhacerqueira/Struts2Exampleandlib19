@@ -7,9 +7,9 @@ $(document).ready(function() {
 
 function callAjax() {
 	$.ajax({
-		type: "POST", cache: false, async: true, dataType: 'json', url: "listContactType.do",
-		success: function() {
-			alert("Sucesso!")
+		type: "POST", cache: false, async: true, dataType: 'json', url: "teste.action",
+		success: function(j) {
+			alert(j.resultado)
 		},
 		error: function(XMLHttpRequest, textStatus, errorThrown) {
 			alert("Deu ruim!");

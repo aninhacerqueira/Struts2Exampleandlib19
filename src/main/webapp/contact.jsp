@@ -2,7 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <%@taglib uri="/struts-tags" prefix="s"%>
-<%@ taglib prefix="sx" uri="/struts-dojo-tags"%>
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -16,14 +16,8 @@
 <script type="text/javascript" src="includes/contacts/index.js"></script>
 <script src="https://kit.fontawesome.com/441d9361e6.js"
 	crossorigin="anonymous"></script>
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-	crossorigin="anonymous">
 
 <title>Formulario</title>
-<sx:head/>
 <s:head />
 <style type="text/css">
 @import url(style.css);
@@ -43,7 +37,8 @@
 						</s:form></td>
 				</tr>
 				<tr>
-					<td><input type="button" value="Clique aqui!" onclick="callAjax()"/></td>
+					<td><input type="button" value="Clique aqui"
+						onclick="callAjax()" /></td>
 				</tr>
 			</table>
 		</div>
