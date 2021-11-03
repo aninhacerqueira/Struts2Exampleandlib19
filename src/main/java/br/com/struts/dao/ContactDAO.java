@@ -1,8 +1,8 @@
-package br.com.vaannila.dao;
+package br.com.struts.dao;
 
 import java.util.List;
 
-import br.com.vaannila.domain.Contact;
+import br.com.struts.domain.Contact;
 
 public interface ContactDAO {
 	

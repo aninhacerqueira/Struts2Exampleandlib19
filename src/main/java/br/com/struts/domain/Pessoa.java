@@ -1,4 +1,4 @@
-package br.com.vaannila.domain;
+package br.com.struts.domain;
 
 public class Pessoa {
 	private String name;

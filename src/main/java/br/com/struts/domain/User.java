@@ -1,4 +1,4 @@
-package br.com.vaannila.domain;
+package br.com.struts.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

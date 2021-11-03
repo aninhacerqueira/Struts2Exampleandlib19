@@ -1,4 +1,4 @@
-package br.com.vaannila.dao;
+package br.com.struts.dao;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ import org.hibernate.Transaction;
 import com.googlecode.s2hibernate.struts2.plugin.annotations.SessionTarget;
 import com.googlecode.s2hibernate.struts2.plugin.annotations.TransactionTarget;
 
-import br.com.vaannila.domain.Contact;
+import br.com.struts.domain.Contact;
 
 public class ContactDAOImpl implements ContactDAO {
 	

@@ -1,4 +1,4 @@
-package br.com.vaannila.web;
+package br.com.struts.web;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,12 +11,12 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 
-import br.com.vaannila.dao.ContactDAO;
-import br.com.vaannila.dao.ContactDAOImpl;
-import br.com.vaannila.dao.ContactTypeDAO;
-import br.com.vaannila.dao.ContactTypeDAOImpl;
-import br.com.vaannila.domain.Contact;
-import br.com.vaannila.domain.ContactType;
+import br.com.struts.dao.ContactDAO;
+import br.com.struts.dao.ContactDAOImpl;
+import br.com.struts.dao.ContactTypeDAO;
+import br.com.struts.dao.ContactTypeDAOImpl;
+import br.com.struts.domain.Contact;
+import br.com.struts.domain.ContactType;
 
 public class ContactAction extends ActionSupport implements ModelDriven<ContactType> {
 	
