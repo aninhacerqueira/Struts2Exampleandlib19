@@ -8,7 +8,7 @@ $(document).ready(function() {
 function callAjax() {
 	$.ajax({
 		type: "POST", cache: false, async: true, dataType: 'json', url: "listContactType.do",
-		success: function(j) {
+		success: function() {
 			alert("Sucesso!")
 		},
 		error: function(XMLHttpRequest, textStatus, errorThrown) {
