@@ -12,9 +12,9 @@
 			<property name="connection.pool_size">1</property>
 			<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 			<property name="show_sql">true</property>
-			<mapping class="com.vaannila.domain.User" />
-			<mapping class="com.vaannila.domain.Contact" />
-			<mapping class="com.vaannila.domain.ContactType" />
+			<mapping class="br.com.struts.domain.User" />
+			<mapping class="br.com.struts.domain.Contact" />
+			<mapping class="br.com.struts.domain.ContactType" />
 		</session-factory>
 
 </hibernate-configuration>

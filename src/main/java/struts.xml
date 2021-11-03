@@ -6,49 +6,49 @@
 <struts>
 	<package name="default" extends="hibernate-default">
 	<!-- User model -->
-		<action name="saveOrUpdateUser" method="saveOrUpdate" class="com.vaannila.web.UserAction">
+		<action name="saveOrUpdateUser" method="saveOrUpdate" class="br.com.struts.web.UserAction">
 			<result name="success" type="redirect">listUser</result>
 		</action>
-		<action name="listUser" method="list" class="com.vaannila.web.UserAction">
+		<action name="listUser" method="list" class="br.com.struts.web.UserAction">
 			<result name="success">/register.jsp</result>
 		</action>
-		<action name="editUser" method="edit" class="com.vaannila.web.UserAction">
+		<action name="editUser" method="edit" class="br.com.struts.web.UserAction">
 			<result name="success">/register.jsp</result>
 		</action>
-		<action name="deleteUser" method="delete" class="com.vaannila.web.UserAction">
+		<action name="deleteUser" method="delete" class="br.com.struts.web.UserAction">
 			<result name="success" type="redirect">listUser</result>
 		</action>
 		
 		<!-- Contact model -->
-		<action name="saveOrUpdateContact" method="saveOrUpdate" class="com.vaannila.web.ContactAction">
+		<action name="saveOrUpdateContact" method="saveOrUpdate" class="br.com.struts.web.ContactAction">
 			<result name="success" type="redirect">listContact</result>
 		</action>
-		<action name="listContact" method="list" class="com.vaannila.web.ContactAction">
+		<action name="listContact" method="list" class="br.com.struts.web.ContactAction">
 			<result name="success">/contact.jsp</result>
 		</action>
-		<action name="editContact" method="edit" class="com.vaannila.web.ContactAction">
+		<action name="editContact" method="edit" class="br.com.struts.web.ContactAction">
 			<result name="success">/contact.jsp</result>
 		</action>
-		<action name="deleteContact" method="delete" class="com.vaannila.web.ContactAction">
+		<action name="deleteContact" method="delete" class="br.com.struts.web.ContactAction">
 			<result name="success" type="redirect">listContact</result>
 		</action>
 		
 		<!-- Contact Type -->
-		<action name="saveOrUpdateContactType" method="saveOrUpdate" class="com.vaannila.web.ContactAction">
+		<action name="saveOrUpdateContactType" method="saveOrUpdate" class="br.com.struts.web.ContactAction">
 			<result name="success" type="redirect">listContactType</result>
 		</action>
-		<action name="listContactType" method="listType" class="com.vaannila.web.ContactAction">
+		<action name="listContactType" method="listType" class="br.com.struts.web.ContactAction">
 			<result name="success">/contact.jsp</result>
 		</action>
-		<action name="editContactType" method="edit" class="com.vaannila.web.ContactAction">
+		<action name="editContactType" method="edit" class="br.com.struts.web.ContactAction">
 			<result name="success">/contact.jsp</result>
 		</action>
-		<action name="deleteContactType" method="delete" class="com.vaannila.web.ContactAction">
+		<action name="deleteContactType" method="delete" class="br.com.struts.web.ContactAction">
 			<result name="success" type="redirect">listContactType</result>
 		</action>
 		
 		<!-- Cep model -->
-		<action name="searchCEP" method="searchCEP" class="com.vaannila.web.UserAction">
+		<action name="searchCEP" method="searchCEP" class="br.com.struts.web.UserAction">
 			<result name="SUCESS"/>
 		</action>
 	</package>

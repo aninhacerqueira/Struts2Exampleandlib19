@@ -1,4 +1,4 @@
-package com.vaannila.dao;
+package br.com.struts.dao;
 
 import java.util.List;
 
@@ -7,10 +7,11 @@ import org.hibernate.Transaction;
 
 import com.googlecode.s2hibernate.struts2.plugin.annotations.SessionTarget;
 import com.googlecode.s2hibernate.struts2.plugin.annotations.TransactionTarget;
-import com.vaannila.domain.ContactType;
 
-public class ContactTypeDAOImpl implements ContactTypeDAO {
+import br.com.struts.domain.User;
 
+public class UserDAOImpl implements UserDAO {
+	
 	@SessionTarget
 	Session session;
 	
@@ -21,9 +22,9 @@ public class ContactTypeDAOImpl implements ContactTypeDAO {
 	 * Used to save or update a user.
 	 */
 	@Override
-	public void saveOrUpdateContactType(ContactType contactType) {
+	public void saveOrUpdateUser(User user) {
 		try {
-			session.saveOrUpdate(contactType);
+			session.saveOrUpdate(user);
 		} catch (Exception e) {
 			transaction.rollback();
 			e.printStackTrace();
@@ -34,10 +35,10 @@ public class ContactTypeDAOImpl implements ContactTypeDAO {
 	 * Used to delete a user.
 	 */
 	@Override
-	public void deleteContactType(Long contactTypeId) {
+	public void deleteUser(Long userId) {
 		try {
-			ContactType contactType = (ContactType) session.get(ContactType.class, contactTypeId);
-			session.delete(contactType);
+			User user = (User) session.get(User.class, userId);
+			session.delete(user);
 		} catch (Exception e) {
 			transaction.rollback();
 			e.printStackTrace();
@@ -49,28 +50,28 @@ public class ContactTypeDAOImpl implements ContactTypeDAO {
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public List<ContactType> listContactType() {
-		List<ContactType> contactTypes = null;
+	public List<User> listUser() {
+		List<User> courses = null;
 		try {
-			contactTypes = session.createQuery("from ContactType").list();
+			courses = session.createQuery("from User").list();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return contactTypes;
+		return courses;
 	}
 
 	/**
 	 * Used to list a single user by Id.
 	 */
 	@Override
-	public ContactType getContactTypeById(Long contactTypeId) {
-		ContactType contactType = null;
+	public User listUserById(Long userId) {
+		User user = null;
 		try {
-			contactType = (ContactType) session.get(ContactType.class, contactTypeId);
+			user = (User) session.get(User.class, userId);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return contactType;
+		return user;
 	}
 
 }

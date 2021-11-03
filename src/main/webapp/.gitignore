@@ -1,2 +1,5 @@
-/ApacheLicense.txt
-/build
+/build/
+/.settings/
+/.metadata/
+/.project/
+/.classpath/
